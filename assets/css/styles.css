@@ -37,10 +37,35 @@ background-color: rgba(0,0,0,.8);
 display: flex;
 flex-direction: column;
 justify-content: center;
+opacity: 0;
+transition: opacity .5s;
+}
+
+#tours .overlay:hover {
+    opacity: 1;
+}
+
+@media (max-width: 870px) {
+#tours .overlay{
+    opacity: 1;
+    position: relative;
+}
 }
 
 #tours img {
     width: 400px;
     height: 300px;
     object-fit: cover;
+}
+#tours {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#book {
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)), url('../imgs/ghost-bg.jpeg');
+    height: 500px;
 }

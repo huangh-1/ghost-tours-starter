@@ -8,6 +8,7 @@
 
    <!-- below is the code for the favicon-->
    <link rel="icon" type="image/x-icon" href="assets/images/cartoon-ghost.png">
+   <link rel="apple-touch-icon" type="image/x-icon" href="assets/images/cartoon-ghost.png">
 
  <!-- code for the text -->
  <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +36,24 @@
      </article>
 
   </head>
-  <body>
-    <h1>Ghoulish Ghost Tours</h1>
+  <section id="book">
+    <h2>Book Your Tour</h2>
+    <form action="">
+      <label for="name"> Name </label>
+      <input type="text" id="name">
+      <br>
+      <label for="email"> Email</label>
+      <input type="email" id="email">
+      <br>
+      <label for="tour-type">Select your tour</label>
+      <select id="tour-type">
+        <option>Haunted Cottage</option>
+        <option>Haunted Mansion</option>
+        <option>Haunted Colonial</option>
+      </select>
+      <br>
+      <button>Book Tour</button>
+    </form>
+  </section>
   </body>
 </html>
