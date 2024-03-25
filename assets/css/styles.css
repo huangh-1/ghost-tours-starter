@@ -27,7 +27,7 @@ h1 {
     position: relative;
 }
 
-#tours.overlay {
+#tours .overlay {
 position: absolute;
 top: 0;
 left: 0;
